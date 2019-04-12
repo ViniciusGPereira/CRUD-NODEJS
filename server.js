@@ -8,7 +8,7 @@ MongoClient.connect(uri, (err, client) => {
     //Caso retorne algum erro mostra o erro no console
     if(err) return console.log(err)
     db = client.db('Cluster-CRUDNODEJS')
-    
+
     //Iniciando servidor na porta 3000
     app.listen(3000, () => {
         console.log('Server running on port 3000')
@@ -27,6 +27,9 @@ app.get('/', (req, res) => {
     //Teste de funcionamento do metodo GET
     //res.send('Hello Word')
 
+    //Obtendo conteudo do DB via método find() disponivel em collection
+    //CURSOR é um objeto MongoDB, nele estão contidas todas as citações do DB
+    let cursor = db.collection('data').find()
     //Pagina a ser renderizada pelo navegador
     res.render('index.ejs')
 
@@ -50,5 +53,10 @@ app.post('/show', (req, res) => {
 
         console.log('Salvo no BD')
         res.redirect('/')
+        //O método toArray recebe uma função callback que nos permite fazer algumas coisas com os objetos que recuperamos do mLab.
+        db.collection('data').find().toArray((err, results) => {
+            //Nessa aplicação estamos exibindo todos os registros do DB no console
+            console.log(results)
+        })
     })    
 });

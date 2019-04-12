@@ -8,7 +8,7 @@ O Middleware Template Engine EJS (Embedded Javascript), é utilizado para trabal
   
 O Nodemon como devDependecy, para auxiliar no desenvolvimento, facilitando a executação do Node
 
-O Express não lida com a leitura de dados do elemento '<form>' por conta própria. Para isso temos que adicionar outro pacote chamado body-parser. O BodyParser é um middleware, são basicamente plugins que alteram o objeto request ou response antes de serem manipulados pelo aplicativo.
+O Express não lida com a leitura de dados do elemento FORM por conta própria. Para isso temos que adicionar outro pacote chamado body-parser. O BodyParser é um middleware, são basicamente plugins que alteram o objeto request ou response antes de serem manipulados pelo aplicativo.
   
 Esses estudos foram baseados nos seguintes artigos:
 

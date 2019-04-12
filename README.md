@@ -5,8 +5,6 @@ Desenvolvimento de CRUD utilizando a tecnologia NODE JS
 No desenvolvimento será utilizado a base de dados MongoDB, que é um Banco de Dados Orientado a Documentos.
 
 O Middleware Template Engine EJS (Embedded Javascript), é utilizado para trabalhar com a renderização de paginas de forma mais simples
-
-é utilizado para trabalhar com as informações enviadas via <form>
   
 O Nodemon como devDependecy, para auxiliar no desenvolvimento, facilitando a executação do Node
 

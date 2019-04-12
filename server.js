@@ -8,5 +8,15 @@ app.listen(3000, function(){
 
 // Resposta ao navegador após solicitação GET ao servidor
 app.get('/', (req, res) => {
-    res.send('Hello Word')
+    //Teste de funcionamento do metodo GET
+    //res.send('Hello Word')
+
+    //Pagina a ser renderizada pelo navegador
+    res.render('index.ejs')
+
 });
+
+//Utilização do template engine EJS (Embedded Javascript)
+//Configuração da View Engine no Express
+app.set('view engine', 'ejs')
+

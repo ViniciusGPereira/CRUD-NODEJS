@@ -115,3 +115,15 @@ app.route('/edit/:id')
         console.log('BD Atualizado com Sucesso!')
     })
 })
+
+app.route('/delete/:id')
+.get((req, res) =>{
+    var id = req.params.id
+
+    db.collection('data').deleteOne({_id: ObjectId(id)}, (err, result) => {
+        if(err) return res.send(500, err)
+
+        console.log('Item Deletado com Sucesso!')
+        res.redirect('/show')
+    })
+})

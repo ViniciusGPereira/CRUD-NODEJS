@@ -2,6 +2,13 @@
 
 Desenvolvimento de CRUD utilizando a tecnologia NODE JS
 
+O sistema crud consiste em:
+
+C : CREATE Essa função insere os dados obtidos pelo formulário ao banco de dados
+R : READ Essa função resgata os dados do banco de dados e exibe o resultado
+U : UPDATE Essa função é responsável por atualizar os dados de um determinado registro
+D : DELETE Essa função é responsável por teletar um determinado registro
+
 No desenvolvimento será utilizado a base de dados MongoDB, que é um Banco de Dados Orientado a Documentos.
 
 O Middleware Template Engine EJS (Embedded Javascript), é utilizado para trabalhar com a renderização de paginas de forma mais simples
